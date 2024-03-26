@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B37D5173-9D45-4338-9482-DD98091179C0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AbsensiTadikaMesraProd</RootNamespace>
+    <AssemblyName>AbsensiTadikaMesraProd</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbsensiTadikaMesraDataSet.cs">
+      <DependentUpon>AbsensiTadikaMesraDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AbsensiTadikaMesraDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AbsensiTadikaMesraDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Crud\CRUD Guru\EditGuru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Crud\CRUD Guru\EditGuru.Designer.cs">
+      <DependentUpon>EditGuru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crud\CRUD Guru\TambahGuru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Crud\CRUD Guru\TambahGuru.Designer.cs">
+      <DependentUpon>TambahGuru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crud\CRUD Guru\GuruManagemen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Crud\CRUD Guru\GuruManagemen.Designer.cs">
+      <DependentUpon>GuruManagemen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crud\CRUD Kelas\EditKelas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Crud\CRUD Kelas\EditKelas.Designer.cs">
+      <DependentUpon>EditKelas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crud\CRUD Kelas\TambahKelas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Crud\CRUD Kelas\TambahKelas.Designer.cs">
+      <DependentUpon>TambahKelas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crud\CRUD Kelas\KelasManagemen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Crud\CRUD Kelas\KelasManagemen.Designer.cs">
+      <DependentUpon>KelasManagemen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminMain.Designer.cs">
+      <DependentUpon>AdminMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crud\CRUD Siswa\EditSiswa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Crud\CRUD Siswa\EditSiswa.Designer.cs">
+      <DependentUpon>EditSiswa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crud\CRUD Siswa\TambahSiswa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Crud\CRUD Siswa\TambahSiswa.Designer.cs">
+      <DependentUpon>TambahSiswa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crud\CRUD Siswa\SiswaManagemen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Crud\CRUD Siswa\SiswaManagemen.Designer.cs">
+      <DependentUpon>SiswaManagemen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\DashboardAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\DashboardAdmin.Designer.cs">
+      <DependentUpon>DashboardAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Guru\DashboardGuru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guru\DashboardGuru.Designer.cs">
+      <DependentUpon>DashboardGuru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Guru\GuruMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guru\GuruMain.Designer.cs">
+      <DependentUpon>GuruMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kelas.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pengaturan\ResetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pengaturan\ResetPassword.Designer.cs">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Siswa\SiswaAbsen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Siswa\SiswaAbsen.Designer.cs">
+      <DependentUpon>SiswaAbsen.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Crud\CRUD Guru\EditGuru.resx">
+      <DependentUpon>EditGuru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crud\CRUD Guru\TambahGuru.resx">
+      <DependentUpon>TambahGuru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crud\CRUD Guru\GuruManagemen.resx">
+      <DependentUpon>GuruManagemen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crud\CRUD Kelas\EditKelas.resx">
+      <DependentUpon>EditKelas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crud\CRUD Kelas\TambahKelas.resx">
+      <DependentUpon>TambahKelas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crud\CRUD Kelas\KelasManagemen.resx">
+      <DependentUpon>KelasManagemen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\AdminMain.resx">
+      <DependentUpon>AdminMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crud\CRUD Siswa\EditSiswa.resx">
+      <DependentUpon>EditSiswa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crud\CRUD Siswa\TambahSiswa.resx">
+      <DependentUpon>TambahSiswa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crud\CRUD Siswa\SiswaManagemen.resx">
+      <DependentUpon>SiswaManagemen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\DashboardAdmin.resx">
+      <DependentUpon>DashboardAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guru\DashboardGuru.resx">
+      <DependentUpon>DashboardGuru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guru\GuruMain.resx">
+      <DependentUpon>GuruMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pengaturan\ResetPassword.resx">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Siswa\SiswaAbsen.resx">
+      <DependentUpon>SiswaAbsen.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="AbsensiTadikaMesraDataSet.xsc">
+      <DependentUpon>AbsensiTadikaMesraDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AbsensiTadikaMesraDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AbsensiTadikaMesraDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AbsensiTadikaMesraDataSet.xss">
+      <DependentUpon>AbsensiTadikaMesraDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
